@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -96,6 +97,7 @@ fun TimerScreen(navController: NavHostController, viewModel: CocoRoundsViewModel
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center
             ) {
+
                 Text(
                     text = "Round $currentRound - $numberOfRounds",
                     style = MaterialTheme.typography.displayMedium,
@@ -103,6 +105,7 @@ fun TimerScreen(navController: NavHostController, viewModel: CocoRoundsViewModel
                     color = CoolBlack
                     //modifier = Modifier.padding(bottom = 50.dp)
                 )
+
                 Text(
                     text = "$minutesRemaining : $secondsRemaining",
                     style = MaterialTheme.typography.displayLarge,

@@ -20,6 +20,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
+import com.example.cocorounds.ui.theme.Purple40
 
 @Composable
 fun CocoRoundsPortrait(navController: NavHostController, viewModel: CocoRoundsViewModel) {
@@ -32,6 +33,7 @@ fun CocoRoundsPortrait(navController: NavHostController, viewModel: CocoRoundsVi
                 .fillMaxSize()
                 .padding(horizontal = 24.dp)
         ) {
+
             Spacer(modifier = Modifier.height(32.dp))
 
             Box(
@@ -49,6 +51,7 @@ fun CocoRoundsPortrait(navController: NavHostController, viewModel: CocoRoundsVi
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically
             ) {
+
                 Text("Rounds", style = MaterialTheme.typography.headlineSmall)
 
                 Spacer(modifier = Modifier.width(8.dp))
@@ -116,6 +119,7 @@ fun CocoRoundsPortrait(navController: NavHostController, viewModel: CocoRoundsVi
                 modifier = Modifier.fillMaxWidth(),
                 contentAlignment = Alignment.Center
             ) {
+
                 Row {
                     ReadyClearButton(
                         readyButtonText = "Ready",

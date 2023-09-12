@@ -12,6 +12,7 @@ fun CocoRoundsScreen(viewModel: CocoRoundsViewModel) {
     if (isPortrait) {
         CocoRoundsPortrait(viewModel)
     } else {
+
         CocoRoundsLandscape(viewModel)
     }
 }
