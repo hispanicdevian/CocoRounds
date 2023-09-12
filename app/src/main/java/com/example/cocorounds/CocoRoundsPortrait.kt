@@ -46,7 +46,6 @@ fun CocoRoundsPortrait(navController: NavHostController, viewModel: CocoRoundsVi
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // Separate "Rounds" into its own row
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically
@@ -62,7 +61,7 @@ fun CocoRoundsPortrait(navController: NavHostController, viewModel: CocoRoundsVi
                     label = "Number",
                     value = numberOfRoundsValue,
                     onValueChange = { number ->
-                        viewModel.updateNumberOfRounds(number) // Update the view model
+                        viewModel.updateNumberOfRounds(number)
                     }
                 )
             }
