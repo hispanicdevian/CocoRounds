@@ -12,7 +12,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -22,14 +21,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.NavHostController
-import com.example.roundtimer.ui.theme.CoolBlack
-import com.example.roundtimer.viewmodel.RoundTimerViewModel
+import com.example.cocorounds.ui.theme.CoolBlack
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 @Composable
-fun TimerScreen(navController: NavHostController, viewModel: RoundTimerViewModel) {
+fun TimerScreen(navController: NavHostController, viewModel: CocoRoundsViewModel) {
     val roundInputData by viewModel.roundInputData.collectAsState()
     val numberOfRounds by viewModel.numberOfRounds.collectAsState()
     val restInputData by viewModel.restInputData.collectAsState()
