@@ -13,6 +13,7 @@ fun RestRoundScreen(totalRestSeconds: Int) {
         contentAlignment = Alignment.Center,
         modifier = Modifier.fillMaxWidth()
     ) {
+
         RestRoundTimer(remainingRest = totalRestSeconds)
     }
 }

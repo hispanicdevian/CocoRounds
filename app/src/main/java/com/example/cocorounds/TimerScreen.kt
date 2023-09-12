@@ -67,15 +67,15 @@ fun TimerScreen(navController: NavHostController, viewModel: CocoRoundsViewModel
             if (currentRound < numberOfRounds) {
                 currentRound++
             } else {
-                navController.popBackStack("main_screen", inclusive = false)
+                navController.popBackStack("coco_rounds_screen", inclusive = false)
             }
         }
     }
 
     // Handle the back event (Esc, Return, Back, etc.)
     BackHandler {
-        navController.navigate("main_screen") {
-            popUpTo("main_screen") { inclusive = true }
+        navController.navigate("coco_rounds_screen") {
+            popUpTo("coco_rounds_screen") { inclusive = true }
         }
     }
 

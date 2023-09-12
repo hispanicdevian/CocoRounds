@@ -49,19 +49,21 @@ fun RestRoundTimer(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
+
             Text(
                 text = "Rest Round:",
                 style = MaterialTheme.typography.displayMedium.copy(fontWeight = FontWeight.Bold),
-                color = CherryOrange, // Use an appropriate color here
+                color = CherryOrange,
                 modifier = Modifier.padding(bottom = 8.dp)
             )
+
             Text(
                 text = "$minutesRemaining : $secondsRemaining",
                 style = MaterialTheme.typography.displayLarge.copy(fontWeight = FontWeight.Bold),
-                color = CherryOrange, // Use an appropriate color here
+                color = CherryOrange,
                 modifier = Modifier
                     .padding(top = 50.dp)
-                    .animateContentSize() // Animate text size changes
+                    .animateContentSize()
             )
         }
     }
