@@ -112,7 +112,7 @@ fun CocoRoundsPortrait(navController: NavHostController, viewModel: CocoRoundsVi
                 }
             )
 
-            Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier.height(32.dp))
 
             // Ready and Clear Buttons
             Box(

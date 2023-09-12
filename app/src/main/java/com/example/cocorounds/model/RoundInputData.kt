@@ -1,4 +1,4 @@
-package com.example.cocorounds
+package com.example.cocorounds.model
 
 data class RoundInputData(
     val minutes: Int,

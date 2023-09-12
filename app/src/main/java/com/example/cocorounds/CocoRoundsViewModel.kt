@@ -3,6 +3,8 @@ package com.example.cocorounds
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.NavHostController
+import com.example.cocorounds.model.RestInputData
+import com.example.cocorounds.model.RoundInputData
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
 

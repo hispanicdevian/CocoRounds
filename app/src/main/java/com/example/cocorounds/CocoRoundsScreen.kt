@@ -11,9 +11,8 @@ fun CocoRoundsScreen(navController: NavHostController, viewModel: CocoRoundsView
     val isPortrait = configuration.orientation == Configuration.ORIENTATION_PORTRAIT
 
     if (isPortrait) {
-        CocoRoundsPortrait(viewModel)
+        CocoRoundsPortrait(navController, viewModel)
     } else {
-
-        CocoRoundsLandscape(viewModel)
+        CocoRoundsLandscape(navController, viewModel)
     }
 }
