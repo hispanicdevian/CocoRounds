@@ -5,9 +5,10 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
 import androidx.compose.runtime.Composable
-import androidx.navigation.NavHost
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-
+import com.example.cocorounds.ui.theme.CocoRoundsTheme
 
 class MainActivity : ComponentActivity() {
     private val viewModel: CocoRoundsViewModel by viewModels()
@@ -16,7 +17,10 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            MainActivityContent(viewModel)
+            CocoRoundsTheme {
+
+                MainActivityContent(viewModel)
+            }
         }
     }
 }
@@ -25,15 +29,15 @@ class MainActivity : ComponentActivity() {
 fun MainActivityContent(viewModel: CocoRoundsViewModel) {
     val navController = rememberNavController()
 
-    NavHost(navController, startDestination = "main_screen") {
+    NavHost(navController, startDestination = "coco_rounds_screen") {
         composable("main_screen") {
-            MainScreen(navController, viewModel)
+            CocoRoundsScreen(navController, viewModel)
         }
         composable("five_second_screen") { // Add the new destination
             FiveSecondScreen(navController)
         }
         composable("timer_screen") {
-            CocoRoundsScreen(navController, viewModel)
+            TimerScreen(navController, viewModel)
         }
     }
 }
