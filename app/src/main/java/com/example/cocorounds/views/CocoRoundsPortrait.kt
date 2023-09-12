@@ -1,4 +1,4 @@
-package com.example.cocorounds
+package com.example.cocorounds.views
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -20,6 +20,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
+import com.example.cocorounds.viewmodel.CocoRoundsViewModel
+import com.example.cocorounds.views.subscreen.ReadyClearButton
+import com.example.cocorounds.views.subscreen.RestInput
+import com.example.cocorounds.views.subscreen.RoundInput
 import com.example.cocorounds.ui.theme.Purple40
 
 @Composable

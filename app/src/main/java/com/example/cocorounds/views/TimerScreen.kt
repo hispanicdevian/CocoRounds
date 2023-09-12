@@ -1,4 +1,4 @@
-package com.example.cocorounds
+package com.example.cocorounds.views
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.layout.Arrangement
@@ -23,6 +23,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.NavHostController
 import com.example.cocorounds.ui.theme.CoolBlack
+import com.example.cocorounds.viewmodel.CocoRoundsViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

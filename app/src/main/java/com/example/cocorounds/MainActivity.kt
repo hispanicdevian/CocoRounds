@@ -8,6 +8,10 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.cocorounds.viewmodel.CocoRoundsViewModel
+import com.example.cocorounds.views.CocoRoundsScreen
+import com.example.cocorounds.views.FiveSecondScreen
+import com.example.cocorounds.views.TimerScreen
 
 class MainActivity : ComponentActivity() {
     private val viewModel: CocoRoundsViewModel by viewModels()

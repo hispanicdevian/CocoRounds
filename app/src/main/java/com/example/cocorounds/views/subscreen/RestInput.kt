@@ -1,4 +1,4 @@
-package com.example.cocorounds
+package com.example.cocorounds.views.subscreen
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -14,7 +14,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun RoundInput(
+fun RestInput(
     label: String,
     value: Int,
     onValueChange: (Int) -> Unit,

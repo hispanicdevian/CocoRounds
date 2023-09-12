@@ -1,4 +1,4 @@
-package com.example.cocorounds
+package com.example.cocorounds.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

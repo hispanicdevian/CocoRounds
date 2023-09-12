@@ -1,4 +1,4 @@
-package com.example.cocorounds
+package com.example.cocorounds.views.subscreen
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
