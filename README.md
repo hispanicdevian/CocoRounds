@@ -4,6 +4,7 @@ Coco Round Timer App Official
 - Compose
 - MultiScreen
 - Round Intervals
+- Portrait & Landscape View
 - Logos done by me
 
 # Features:
