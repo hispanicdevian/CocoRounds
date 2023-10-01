@@ -4,6 +4,7 @@ Coco Round Timer App Official
 - Compose
 - MultiScreen
 - Round Intervals
+- Logos done by me
 
 # Features:
 ![featuresCocoRound22](https://github.com/ianttta/CocoRounds/assets/135581442/664d5732-67d6-4f2e-8a60-af84a5f5f24f)
