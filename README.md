@@ -1,7 +1,7 @@
 # CocoRounds
 Coco Round Timer App Official
 - MVVM
-- Compose
+- Jetpack Compose
 - MultiScreen
 - Round Intervals
 - Portrait & Landscape View
